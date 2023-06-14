@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stats",
+  "info": {
+    "singularName": "stat",
+    "pluralName": "stats",
+    "displayName": "Stat"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "noGroups": {
+      "type": "integer"
+    },
+    "noEvents": {
+      "type": "integer"
+    },
+    "noMentors": {
+      "type": "integer"
+    },
+    "noSports": {
+      "type": "integer"
+    },
+    "NoBlogs": {
+      "type": "integer"
+    },
+    "noCities": {
+      "type": "integer"
+    }
+  }
+}

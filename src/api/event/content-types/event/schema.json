@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event_name": {
+      "type": "string"
+    },
+    "event_date": {
+      "type": "date"
+    },
+    "event_desc": {
+      "type": "text"
+    },
+    "event_location": {
+      "type": "string"
+    },
+    "event_sport_type": {
+      "type": "string"
+    },
+    "event_banner": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "event_director": {
+      "type": "string"
+    },
+    "event_paid": {
+      "type": "boolean"
+    },
+    "event_price": {
+      "type": "biginteger"
+    },
+    "event_is_periodic": {
+      "type": "boolean"
+    },
+    "event_frequency_text": {
+      "type": "string"
+    },
+    "sport": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sport.sport"
+    },
+    "mentors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::mentor.mentor",
+      "inversedBy": "events"
+    }
+  }
+}

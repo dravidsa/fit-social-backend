@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sports",
+  "info": {
+    "singularName": "sport",
+    "pluralName": "sports",
+    "displayName": "sport",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true,
+    "timestamps": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sport_name": {
+      "type": "string"
+    },
+    "sport_icon": {
+      "type": "string"
+    },
+    "groups": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::group.group",
+      "mappedBy": "sports"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metric_stats",
+  "info": {
+    "singularName": "metric-stat",
+    "pluralName": "metric-stats",
+    "displayName": "metric_stat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metric": {
+      "type": "string"
+    },
+    "value": {
+      "type": "integer"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

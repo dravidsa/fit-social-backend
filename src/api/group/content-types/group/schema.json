@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groups",
+  "info": {
+    "singularName": "group",
+    "pluralName": "groups",
+    "displayName": "group",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "group_id": {
+      "type": "uid"
+    },
+    "group_name": {
+      "type": "string"
+    },
+    "group_desc": {
+      "type": "text",
+      "required": true
+    },
+    "group_location": {
+      "type": "string",
+      "required": true
+    },
+    "group_type": {
+      "type": "string"
+    },
+    "group_img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "is_open": {
+      "type": "boolean"
+    },
+    "sports": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sport.sport",
+      "inversedBy": "groups"
+    },
+    "noMembers": {
+      "type": "integer"
+    }
+  }
+}
