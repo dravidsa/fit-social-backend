@@ -4,7 +4,8 @@
   "info": {
     "singularName": "mentor",
     "pluralName": "mentors",
-    "displayName": "mentor"
+    "displayName": "mentor",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,14 +22,15 @@
       "type": "string"
     },
     "mentor_img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "mentor_rating": {
       "type": "integer"
@@ -38,6 +40,56 @@
       "relation": "manyToMany",
       "target": "api::event.event",
       "mappedBy": "mentors"
+    },
+    "sports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sport.sport"
+    },
+    "short_id": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "site-component.feature-bloc"
+    },
+    "Testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "site-component.testimonial"
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "headline": {
+      "type": "string"
+    },
+    "city_area": {
+      "type": "string"
     }
   }
 }

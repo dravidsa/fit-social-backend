@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_site_component_bibs",
+  "info": {
+    "displayName": "bib"
+  },
+  "options": {},
+  "attributes": {
+    "bib_collection_from": {
+      "type": "datetime"
+    },
+    "bib_collection_till": {
+      "type": "datetime"
+    },
+    "bib_collection_location_address": {
+      "type": "string"
+    }
+  }
+}

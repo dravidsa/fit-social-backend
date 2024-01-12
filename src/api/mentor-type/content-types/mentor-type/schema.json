@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mentor_types",
+  "info": {
+    "singularName": "mentor-type",
+    "pluralName": "mentor-types",
+    "displayName": "mentor_type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

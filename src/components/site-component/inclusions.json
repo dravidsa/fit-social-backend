@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_site_component_inclusions",
+  "info": {
+    "displayName": "inclusions"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

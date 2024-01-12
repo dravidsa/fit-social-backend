@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_site_component_carousels",
+  "info": {
+    "displayName": "carousel"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "caraousel_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "caraousel_text": {
+      "type": "string"
+    }
+  }
+}

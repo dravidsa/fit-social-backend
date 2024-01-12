@@ -63,6 +63,46 @@
       "relation": "manyToMany",
       "target": "api::mentor.mentor",
       "inversedBy": "events"
+    },
+    "attendee_catagories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "site-component.attendee-catagories"
+    },
+    "evemt_categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "site-component.event-categories"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "inclusions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "site-component.inclusions"
+    },
+    "event_map": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "T_shirt_provided": {
+      "type": "boolean"
+    },
+    "charges": {
+      "type": "component",
+      "repeatable": false,
+      "component": "site-component.charges"
+    },
+    "is_id_proof_needed": {
+      "type": "boolean"
     }
   }
 }

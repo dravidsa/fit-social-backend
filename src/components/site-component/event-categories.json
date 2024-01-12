@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_site_component_event_categories",
+  "info": {
+    "displayName": "event_categories",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "max_allowed": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "open_till": {
+      "type": "date"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "start_time": {
+      "type": "time"
+    },
+    "reporting_time": {
+      "type": "time"
+    }
+  }
+}

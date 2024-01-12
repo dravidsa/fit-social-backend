@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_enrollments",
+  "info": {
+    "singularName": "event-enrollment",
+    "pluralName": "event-enrollments",
+    "displayName": "event_enrollment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event.event"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    },
+    "attendee_catagory": {
+      "type": "string"
+    },
+    "event_catagory": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "emmergency_contact_name": {
+      "type": "string"
+    },
+    "emmergency_contact_number": {
+      "type": "integer"
+    },
+    "t_shirt_size": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "BIB": {
+      "type": "integer"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "BIB_Status": {
+      "type": "string"
+    },
+    "id_type": {
+      "type": "string"
+    },
+    "identity_no": {
+      "type": "string"
+    },
+    "identity_proof": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "payment_ref": {
+      "type": "string"
+    },
+    "payment_status": {
+      "type": "string"
+    }
+  }
+}

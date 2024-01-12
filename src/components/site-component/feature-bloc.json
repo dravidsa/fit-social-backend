@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_site_component_feature_blocs",
+  "info": {
+    "displayName": "feature-bloc"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "feature_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

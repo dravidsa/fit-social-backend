@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_site_component_charges",
+  "info": {
+    "displayName": "charges"
+  },
+  "options": {},
+  "attributes": {
+    "GST_to_be_charged": {
+      "type": "boolean"
+    },
+    "platform_charges_to_be_charged": {
+      "type": "boolean"
+    },
+    "GST_origin": {
+      "type": "string"
+    },
+    "platform_charges_origin": {
+      "type": "string"
+    },
+    "GST_percent": {
+      "type": "decimal"
+    },
+    "platform_charges_percent": {
+      "type": "decimal"
+    }
+  }
+}
